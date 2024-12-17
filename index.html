@@ -26,8 +26,8 @@
     border: solid black 0.5px;
     color: black;
     border-radius: 5px;
-    width: 100%;
-    height: 65%;
+    width: 95%;
+    height: 1cm;
 }
 
 #btn {
@@ -55,13 +55,13 @@ input:active[type=button] {
 <body>
  
 <table class="calculator" >
-  <tr>
-    <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
- 
-    <!-- clearScreen() function clears all the values -->
+  <thead>
+    <td colspan="2"> <input class="display-box" type="text" id="result" disabled /> </td>
+ <!-- backspace() function clears the last value -->
     <td> <input type="button" value="<-" onclick="backspace()" id="btn" /> </td>
+      <!-- clearScreen() function clears all the values -->
     <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
-  </tr>
+  </thead>
   <tr>
     <!-- display() function displays the value of clicked button -->
     <td> <input type="button" value="1" onclick="display('1')" /> </td>
